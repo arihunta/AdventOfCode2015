@@ -128,4 +128,26 @@ class AdventOfCode2015Test {
 
     }
 
+    @Test
+    void _06_01() throws IOException, URISyntaxException, NoSuchAlgorithmException {
+
+        final var input = Files.readAllLines(Paths.get(getClass().getResource("/06").toURI()));
+
+        final var answer = AdventOfCode2015._06_01(input);
+
+        Assertions.assertEquals(377891, answer);
+
+    }
+
+    @Test
+    void _06_02() throws IOException, URISyntaxException, NoSuchAlgorithmException {
+
+        final var input = Files.readAllLines(Paths.get(getClass().getResource("/06").toURI()));
+
+        final var answer = AdventOfCode2015._06_02(input);
+
+        Assertions.assertEquals(14110788, answer);
+
+    }
+
 }
