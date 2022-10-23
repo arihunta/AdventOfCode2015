@@ -13,24 +13,20 @@ class Day05Test {
 
     @Test
     void _05_01() throws IOException, URISyntaxException, NoSuchAlgorithmException {
-
         final var input = Files.readAllLines(Paths.get(getClass().getResource("/05").toURI()));
 
         final var answer = Day05._05_01(input);
 
         Assertions.assertEquals(236, answer);
-
     }
 
     @Test
     void _05_02() throws IOException, URISyntaxException, NoSuchAlgorithmException {
-
         final var input = Files.readAllLines(Paths.get(getClass().getResource("/05").toURI()));
 
         final var answer = Day05._05_02(input);
 
         Assertions.assertEquals(51, answer);
-
     }
 
 }

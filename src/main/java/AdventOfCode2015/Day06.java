@@ -26,11 +26,9 @@ public class Day06 {
                     for (int j = y_start; j <= y_end; j++) {
                         if (line.startsWith("turn on")) {
                             lights[i][j] = true;
-                        }
-                        else if (line.startsWith("turn off")) {
+                        } else if (line.startsWith("turn off")) {
                             lights[i][j] = false;
-                        }
-                        else {
+                        } else {
                             lights[i][j] = !lights[i][j];
                         }
                     }
@@ -43,7 +41,8 @@ public class Day06 {
         int count = 0;
         for (int i = 0; i < lights.length; i++) {
             for (int j = 0; j < lights[i].length; j++) {
-                if (lights[i][j]) count++;
+                if (lights[i][j])
+                    count++;
             }
         }
 
@@ -72,11 +71,9 @@ public class Day06 {
                     for (int j = y_start; j <= y_end; j++) {
                         if (line.startsWith("turn on")) {
                             lights[i][j]++;
-                        }
-                        else if (line.startsWith("turn off")) {
+                        } else if (line.startsWith("turn off")) {
                             lights[i][j] = lights[i][j] == 0 ? 0 : lights[i][j] - 1;
-                        }
-                        else {
+                        } else {
                             lights[i][j] = lights[i][j] + 2;
                         }
                     }

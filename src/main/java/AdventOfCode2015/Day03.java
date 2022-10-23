@@ -15,18 +15,18 @@ public class Day03 {
 
         for (int i = 0; i < input.length(); i++) {
             switch (input.charAt(i)) {
-            case '<':
-                x--;
-                break;
-            case '>':
-                x++;
-                break;
-            case 'v':
-                y--;
-                break;
-            case '^':
-                y++;
-                break;
+                case '<':
+                    x--;
+                    break;
+                case '>':
+                    x++;
+                    break;
+                case 'v':
+                    y--;
+                    break;
+                case '^':
+                    y++;
+                    break;
             }
             houses.add(x + "," + y);
         }
@@ -47,18 +47,18 @@ public class Day03 {
 
         for (int i = 0; i < input.length(); i++) {
             switch (input.charAt(i)) {
-            case '<':
-                coords[santa][0]--;
-                break;
-            case '>':
-                coords[santa][0]++;
-                break;
-            case 'v':
-                coords[santa][1]--;
-                break;
-            case '^':
-                coords[santa][1]++;
-                break;
+                case '<':
+                    coords[santa][0]--;
+                    break;
+                case '>':
+                    coords[santa][0]++;
+                    break;
+                case 'v':
+                    coords[santa][1]--;
+                    break;
+                case '^':
+                    coords[santa][1]++;
+                    break;
             }
             houses.add(Arrays.toString(coords[santa]));
             santa = 1 - santa;

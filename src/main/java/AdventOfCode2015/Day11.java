@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
-import com.google.common.collect.Range;
-
 public class Day11 {
 
     public static String _11_01(final List<String> input) {

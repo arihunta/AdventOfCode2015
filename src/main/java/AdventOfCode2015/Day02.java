@@ -5,12 +5,13 @@ import java.util.List;
 
 public class Day02 {
 
-	public static int _02_01(final List<String> input) {
+    public static int _02_01(final List<String> input) {
 
         return input.stream().map(it -> it.split("x"))
                 .map(it -> Arrays.stream(it).mapToInt(str -> Integer.parseInt(str)).sorted().toArray())
                 .map(it -> new int[] { it[0] * it[1], it[0] * it[2], it[1] * it[2] })
-                .map(it -> Arrays.stream(it).sorted().toArray()).mapToInt(it -> 3 * it[0] + 2 * it[1] + 2 * it[2])
+                .map(it -> Arrays.stream(it).sorted().toArray())
+                .mapToInt(it -> 3 * it[0] + 2 * it[1] + 2 * it[2])
                 .sum();
 
     }

@@ -18,11 +18,10 @@ public class Day04 {
             final byte[] digest = alg.digest(hashString.getBytes());
 
             final String hash = IntStream
-                .range(0, digest.length)
-                .boxed()
-                .map(it -> String.format("%02x", digest[it]))
-                .collect(Collectors.joining())
-            ;
+                    .range(0, digest.length)
+                    .boxed()
+                    .map(it -> String.format("%02x", digest[it]))
+                    .collect(Collectors.joining());
 
             if (hash.startsWith("00000")) {
                 return suffix;
@@ -45,11 +44,10 @@ public class Day04 {
             final byte[] digest = alg.digest(hashString.getBytes());
 
             final String hash = IntStream
-                .range(0, digest.length)
-                .boxed()
-                .map(it -> String.format("%02x", digest[it]))
-                .collect(Collectors.joining())
-            ;
+                    .range(0, digest.length)
+                    .boxed()
+                    .map(it -> String.format("%02x", digest[it]))
+                    .collect(Collectors.joining());
 
             if (hash.startsWith("000000")) {
                 return suffix;
